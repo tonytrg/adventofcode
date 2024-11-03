@@ -44,8 +44,8 @@ func main() {
 		calibration := scanner.Text()
 		values := make(map[int]int)
 		for i, n := range numbersAsString {
-			m := GetNumbers(calibration, n, i + 1)
-			for k, v := range(m) {
+			m := GetNumbers(calibration, n, i+1)
+			for k, v := range m {
 				values[k] = v
 			}
 		}
@@ -72,7 +72,7 @@ func main() {
 				min = k
 			}
 		}
-		sum = sum + (values[min] * 10 + values[max])
+		sum = sum + (values[min]*10 + values[max])
 	}
 	fmt.Printf("The new sum of values is: %d\n", sum)
 }
@@ -91,7 +91,7 @@ func GetNumbers(calibration, number string, num int) map[int]int {
 	for i < len(calibration) {
 		index := strings.Index(calibration[i:], number)
 		if index != -1 {
-			m[index + i] = num
+			m[index+i] = num
 		}
 		i = i + index + len(number)
 	}
