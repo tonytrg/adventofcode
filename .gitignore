@@ -26,3 +26,6 @@ go.work.sum
 
 # input values from the challenge are not persisted
 input
+
+# typescript
+node_modules

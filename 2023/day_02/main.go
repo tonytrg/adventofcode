@@ -74,9 +74,9 @@ func main() {
 		}
 		reveals = strings.Split(reveals[1], ";")
 		blue, green, red := 1, 1, 1
-		for _, reveal := range(reveals) {
+		for _, reveal := range reveals {
 			c := strings.Split(reveal, ",")
-			for _, color := range(c) {
+			for _, color := range c {
 				cubes := strings.Split(strings.Trim(color, " "), " ")
 				if len(cubes) != 2 {
 					fmt.Println(cubes)

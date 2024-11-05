@@ -77,14 +77,6 @@ func main() {
 	fmt.Printf("The new sum of values is: %d\n", sum)
 }
 
-func IsNumber(ascii int) (number int, ok bool) {
-	if ascii >= 48 && ascii <= 57 {
-		number = ascii - 48
-		ok = true
-	}
-	return number, ok
-}
-
 func GetNumbers(calibration, number string, num int) map[int]int {
 	m := make(map[int]int)
 	i := 0

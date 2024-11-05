@@ -20,3 +20,11 @@ func GetRelativePath() string {
 	}
 	return filepath.Dir(filename)
 }
+
+func IsNumber(ascii int) (number int, ok bool) {
+	if ascii >= 48 && ascii <= 57 {
+		number = ascii - 48
+		ok = true
+	}
+	return number, ok
+}
